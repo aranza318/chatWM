@@ -1,11 +1,11 @@
-import express from "express";
+import express  from "express";
 import __dirname from "./utils.js";
 import handlebars from "express-handlebars";
 import viewsRouter from "./routes/views.routes.js";
 import {Server} from "socket.io";
 
 const app = express();
-const puerto = 8090;
+const puerto = 8013;
 const httpServer = app.listen(puerto, () => {
     console.log("Servidor Activo en el puerto: " + puerto);
 });
